@@ -38,8 +38,7 @@ RUN apk add --no-cache \
 COPY --from=0 /usr/src/app/dist / 
 
 ENTRYPOINT [ "tig" ]
-CMD [ "--help" ]
 
-VOLUME /usr/local/etc/tigrc
+VOLUME /usr/local/etc
 VOLUME /tmp/workspace
 
